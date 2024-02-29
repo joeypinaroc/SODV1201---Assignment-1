@@ -1,0 +1,58 @@
+<!-- @name: SODV1201 Assignment 1
+@author: Joey Pinaroc
+html for the Staff page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- nav items to be added using javascript -->
+        </nav>
+    </header>
+    
+    <article>
+        <div class="header">
+            <h1>Staff</h1>
+        </div>
+        
+        <div id="StaffBody">
+            <div>
+                <span>Sort by: </span>
+                <button id="sortByName">Name</button>
+                <button id="sortBySalary">Salary</button>
+            </div>
+            
+            <table id="staffTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Role</th>
+                        <th>City</th>
+                        <th>ID</th>
+                        <th>Date of Hire</th>
+                        <th>Salary</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <!-- td cells to be added using javascript -->
+                </tbody>
+            </table>
+        </div>
+    </article>
+
+    <footer>
+        <p>Joey Pinaroc</p>
+        <p id="currentDate"></p>
+        <p id="copyright">Copyright 2024</p>
+    </footer>
+
+    <script src="scriptStaff.js"></script>
+</body>
+</html>

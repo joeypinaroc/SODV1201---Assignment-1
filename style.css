@@ -1,0 +1,180 @@
+/* @name: SODV1201 Assignment 1
+@author: Joey Pinaroc */
+
+/* GLOBAL DESIGN */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: lightblue;
+    height: 100%;
+    min-height: 100vh;
+    display: flex; /*use flex and flex-direction: column to fix footer to bottom of page*/
+    flex-direction: column;
+}
+article {
+    flex: 1; /*article fills space between start of body to footer*/
+}
+footer {
+    font-size: smaller;
+    border-top: solid 1px;
+    min-height: 50px;
+    width: 100%;
+}
+footer p {
+    text-align: right;
+}
+h1 {
+    width: 80%;
+    text-align: center;
+    border-bottom: solid 1px;
+}
+.header {
+    display: flex; /*flex to enable centering items*/
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    border: solid 1px;
+    margin: 10px auto;
+    width: 80vw;
+    background-color: azure;
+}
+nav a {
+    padding: 5px 10px;
+    background-color: azure;
+}
+input {
+    background-color: azure;
+    border: 0;
+    width: 50px;
+}
+/*  */
+
+/* HOME PAGE */
+#homeBody {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
+}
+#homeBody img {
+    height: 450px;
+    width: 300px;
+}
+#homeBody div {
+    width: 50%; /*make the 2 divs share half the screen*/
+}
+#homeBody div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+#homeBody div:nth-child(2) p:nth-child(1) {
+    width: 70%;
+    padding: 0 0 10px 10px;
+    font-size: large;
+    font-weight: bold;
+}
+#homeBody div:nth-child(2) p:nth-child(2) {
+    width: 70%;
+    padding: 0 0 10px 10px;
+}
+/*  */
+
+/* MARK TO GRADE PAGE */
+#MTGBody {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 25px;
+}
+#MTGBody div {
+    display: flex;
+    justify-content: center;
+    width: 100%; /*to enable wrapping of #validationMessage*/
+}
+#validationMessage {
+    margin-top: 10px;
+    font-size: large;
+    font-weight: bold;
+}
+/*  */
+
+/* STAFF PAGE */
+#StaffBody {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 25px;
+}
+#StaffBody div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#staffTable {
+    width: 70%;
+    border-collapse: collapse; /*remove spaces between cells*/
+}
+thead, tbody, th, tr, td
+{
+    border: solid 1px black;
+}
+thead {
+    background-color: blue;
+}
+tbody {
+    background-color: azure;
+}
+th {
+    font-size: large;
+    color: whitesmoke;
+}
+tr {
+    text-align: center;
+}
+/*  */
+
+/* WEATHER PAGE */
+#WeatherBody {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 25px;
+}
+#WeatherBody div:nth-child(1) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.tempBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border: solid 1px black;
+    margin: 0 40vw 0 40vw; /*make boxes smaller*/
+}
+.tempBox label {
+    border-right: solid 1px black;
+    width: 60%;
+    text-align: center;
+    padding: 15px;
+}   
+.tempBox p {
+    border-right: solid 1px black;
+    width: 40%;
+    text-align: center;
+    padding: 15px;
+    font-size: large;
+    font-weight: bold;
+    background-color: azure;
+}   
+/*  */

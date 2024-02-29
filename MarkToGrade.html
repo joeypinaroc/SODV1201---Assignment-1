@@ -1,0 +1,43 @@
+<!-- @name: SODV1201 Assignment 1
+@author: Joey Pinaroc -->
+<!-- html for the Mark To Grade page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark To Grade</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <article>
+        <header>
+            <nav>
+                <!-- nav items to be added using javascript -->
+            </nav>
+        </header>
+
+        <div class="header">
+            <h1>Mark To Grade Page</h1>
+        </div>
+        
+        <div id="MTGBody">
+            <div>
+                <label for="markInput">Enter mark here:</label>
+                <input type="text" name="markInput" id="markInput">
+                <button id="MTGButton">Convert to grade</button>
+            </div>
+            <p id="validationMessage"></p>
+        </div>
+    </article>
+
+    <footer>
+        <p>Joey Pinaroc</p>
+        <p id="currentDate"></p>
+        <p id="copyright">Copyright 2024</p>
+    </footer>
+
+    <script src="scriptMTG.js"></script>
+</body>
+</html>

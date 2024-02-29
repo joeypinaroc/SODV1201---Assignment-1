@@ -1,0 +1,50 @@
+<!-- @name: SODV1201 Assignment 1
+@author: Joey Pinaroc
+html for the Weather page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- nav items to be added using javascript -->
+        </nav>
+    </header>
+    
+    <article>
+        <div class="header">
+            <h1>Weather</h1>
+        </div>
+        
+        <div id="WeatherBody">
+            <div>
+                <label for="weatherInput">Enter temperature input in degrees Fahrenheit here:</label>
+                <input type="text" name="weatherInput" id="weatherInput">
+                <button id="tempButton">Convert to Celsius and Kelvin</button>
+            </div>
+            <div class="tempBox">
+                <label for="tempCelsiusBox">Temperature in Celsius</label>
+                <p name="tempCelsiusBox" id="tempCelsiusBox"></p>
+            </div>
+            <div class="tempBox">
+                <label for="tempKelvinBox">Temperature in Kelvin</label>
+                <p name="tempKelvinBox" id="tempKelvinBox"></p>
+            </div>
+        </div>  
+    </article>  
+
+    <footer>
+        <p>Joey Pinaroc</p>
+        <p id="currentDate"></p>
+        <p id="copyright">Copyright 2024</p>
+    </footer>
+
+    <script src="scriptWeather.js"></script>
+</body>
+</html>
